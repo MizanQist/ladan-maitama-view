@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SB2 at Maitama View</title>
+<meta name="description" content="Private dossier for Mr Dikko Ladan: Block SB2 at Maitama View, Plot 758, CAD Zone A05, Maitama, Abuja — the enclave, the block, its floor plans and materials.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#cbcbca">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&family=Manrope:wght@300;400;500;600&display=swap">
+<style>
+/* SB2 at Maitama View: the Atlantic View system. Grey field, off-white panels and bands, dark type, one timber accent; Outfit light display, Manrope body. */
+:root{
+  --bg:#cbcbca;--bg2:#f6f6f4;--bg3:#e2e2e0;--bg-rgb:203,203,202;
+  --ink:#1f2227;--ink2:rgba(31,34,39,.76);--ink3:rgba(31,34,39,.70);
+  --acc:#6e4a22;--acc2:#c7955f;--acc3:#d9a66c;--acc-soft:rgba(168,116,60,.18);
+  --line:rgba(31,34,39,.16);--line2:rgba(31,34,39,.38);
+  --green:#cdddc6;--green2:#a9bfa3;--water:#c9d6e2;--photo-ink:#e9e3d7;
+  --r:20px;--r2:14px;
+  --fd:'Outfit',system-ui,sans-serif;--fb:'Manrope',system-ui,sans-serif;
+  --rail:252px;--gut:clamp(20px,5vw,72px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.num{font-variant-numeric:tabular-nums}
+.k{font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--acc)}
+
+/* ——— title-block rail ——— */
+.rail{position:fixed;top:0;left:0;bottom:0;width:var(--rail);border-right:1px solid var(--line);padding:30px 26px 26px;display:flex;flex-direction:column;gap:34px;background:var(--bg2);z-index:40}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark .sb{display:inline-flex;align-items:center;height:26px;padding:0 10px;border:1px solid var(--acc2);border-radius:999px;font:500 .7rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.mark .t{font:300 .78rem/1 var(--fd);letter-spacing:.3em;text-transform:uppercase;white-space:nowrap}
+.index{display:flex;flex-direction:column;gap:2px;margin:0;padding:0;list-style:none}
+.index a{display:grid;grid-template-columns:28px 1fr;align-items:baseline;gap:10px;padding:10px 10px;margin:0 -10px;border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--ink2);transition:background .3s,color .3s}
+.index a i{font-style:normal;font:500 .7rem/1 var(--fb);letter-spacing:.14em;color:var(--ink3)}
+.index a:hover{background:var(--bg3);color:var(--ink)}
+.index a.on{color:var(--ink);font-weight:500}
+.index a.on i{color:var(--acc)}
+.tblock{margin-top:auto;border-top:1px solid var(--line);padding-top:18px}
+.tblock dl{margin:0;display:grid;grid-template-columns:1fr;gap:12px}
+.tblock dt{font:500 .7rem/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+.tblock dd{margin:5px 0 0;font-size:.86rem;line-height:1.4;color:var(--ink2)}
+.railclose{display:none}
+
+/* ——— phone bar ——— */
+.bar{display:none;position:sticky;top:0;z-index:30;height:64px;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(var(--bg-rgb),.78);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+.bar .idxbtn{height:40px;padding:0 18px;border:1px solid var(--line2);border-radius:999px;font:500 .72rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase}
+
+/* ——— sheets ——— */
+main{margin-left:var(--rail)}
+.sheet{padding:clamp(60px,8vw,120px) var(--gut) clamp(68px,9vw,136px)}
+.sheet.band{background:var(--bg2)}
+.sheet > *{max-width:1360px}
+.shead{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:22px;border-bottom:1px solid var(--line);padding:0 0 16px;margin-bottom:clamp(36px,5vw,64px)}
+.shead .sno,.shead .smeta{font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+.shead .sno{color:var(--acc)}
+.shead h2{margin:0;font:300 .9rem/1 var(--fd);letter-spacing:.3em;text-transform:uppercase}
+.title{font:200 clamp(2.1rem,4.3vw,3.7rem)/1.05 var(--fd);letter-spacing:-.005em;margin:0 0 24px;text-wrap:balance;max-width:17ch}
+.title em{font-style:normal;font-weight:300;color:var(--acc)}
+.lede{font-size:clamp(1.05rem,1.35vw,1.25rem);line-height:1.6;max-width:58ch;margin:0 0 20px;color:var(--ink2);font-weight:300}
+.body{max-width:60ch;margin:0 0 1.1em;color:var(--ink2)}
+.cap{font:400 .84rem/1.6 var(--fb);letter-spacing:.01em;color:var(--ink3);margin-top:16px}
+.cap b{color:var(--ink);font-weight:500}
+.two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:start}
+.two.rev{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 0}
+.btn{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 26px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:500 .86rem var(--fb);letter-spacing:.03em;text-decoration:none;white-space:nowrap;transition:transform .25s var(--ease),background .3s,border-color .3s,color .3s}
+.btn:hover{background:rgba(31,34,39,.07)}
+.btn:active{transform:scale(.97)}
+.btn.pri{background:var(--acc2);border-color:var(--acc2);color:var(--ink)}
+.btn.pri:hover{background:var(--acc3);border-color:var(--acc3)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.frame{position:relative;background:var(--bg3);overflow:hidden;border-radius:var(--r)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.sched{margin:0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.sched div{display:grid;grid-template-columns:minmax(120px,36%) 1fr;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);font-size:.92rem;line-height:1.5;color:var(--ink2)}
+.sched dt{font:500 .7rem/1.6 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);padding-top:3px}
+.sched dd{margin:0}
+
+/* ——— 00 welcome ——— */
+.welcome{padding-top:clamp(40px,6vw,80px)}
+.stamp{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:clamp(44px,7vw,100px);font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--ink3)}
+.stamp span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--acc2);margin:0 10px 2px 0}
+.hero{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,9fr);gap:clamp(32px,5vw,80px);align-items:end}
+.h1{font:200 clamp(2.9rem,6.4vw,6.6rem)/1 var(--fd);letter-spacing:-.01em;margin:0 0 30px;text-wrap:balance}
+.h1 small{display:block;font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--acc);margin-bottom:28px}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:46px 0 0;padding:22px 0 0;border-top:1px solid var(--line);list-style:none}
+.figs .n{font:200 clamp(2rem,3.2vw,3rem)/1 var(--fd);letter-spacing:-.01em}
+.figs .n small{font-size:1rem;font-weight:300;color:var(--ink3);margin-left:4px}
+.figs .l{margin-top:10px;font:500 .7rem/1.6 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+.hv{aspect-ratio:16/10}
+
+/* ——— 01 enclave · site plan ——— */
+.sitebox{background:var(--bg2);border-radius:var(--r);padding:clamp(16px,2.4vw,30px)}
+.band .sitebox{background:var(--bg3)}
+.siteplan{width:100%;aspect-ratio:505/600;display:block}
+.siteplan svg{width:100%;height:100%;overflow:visible}
+.sp-road{fill:rgba(31,34,39,.09)}
+.sp-band{fill:var(--green)}
+.sp-in{fill:var(--bg2)}
+.sp-ave{fill:rgba(31,34,39,.08)}
+.sp-isl{fill:var(--green);stroke:var(--green2);stroke-width:.8}
+.sp-fence{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s var(--ease)}
+.siteplan.draw .sp-fence{stroke-dashoffset:0}
+.sp-gate{stroke:var(--acc);stroke-width:2;stroke-dasharray:3 2}
+.sp-house{fill:var(--bg2);stroke:var(--ink);stroke-width:.9;cursor:pointer;transition:fill .3s,stroke .3s,opacity .3s}
+.sp-house:hover,.sp-house.on{fill:var(--acc-soft);stroke:var(--acc)}
+.sp-house.mine{fill:var(--acc2);stroke:var(--acc2)}
+.sp-house.mine:hover,.sp-house.mine.on{fill:var(--acc3);stroke:var(--acc3)}
+.sp-house.dim{opacity:.45}
+.sp-gh{fill:var(--bg3);stroke:var(--ink);stroke-width:.8;cursor:pointer}
+.sp-gh:hover,.sp-gh.on{fill:var(--acc-soft);stroke:var(--acc)}
+.sp-hl{font:500 9.5px var(--fb);letter-spacing:.1em;fill:var(--ink);pointer-events:none}
+.sp-hl.mine{fill:var(--ink)}
+.sp-txt{font:500 8.5px var(--fb);letter-spacing:.16em;text-transform:uppercase;fill:var(--ink3)}
+.sp-txt.big{font:300 12.5px var(--fd);letter-spacing:.14em;fill:var(--ink)}
+.sp-palm{fill:var(--green2);opacity:.9}
+.sp-tree{fill:var(--green2);opacity:.55}
+.sp-scale{stroke:var(--ink);stroke-width:.8}
+.sp-n{fill:none;stroke:var(--ink);stroke-width:.8}
+.sp-lead{stroke:var(--acc);stroke-width:.9;fill:none;stroke-dasharray:2 2}
+.sitecap{min-height:48px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.9rem;line-height:1.5;color:var(--ink2)}
+.sitecap b{font-weight:500;color:var(--ink)}
+.sitecap i{font-style:normal;font:500 .7rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-left:10px}
+.legend{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.legend li{display:inline-flex;align-items:center;gap:9px;height:38px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;color:var(--ink2);cursor:pointer;transition:border-color .3s,background .3s,color .3s}
+.legend li:hover,.legend li.on{border-color:var(--acc2);color:var(--ink);background:var(--bg2)}
+.legend li .sw{width:10px;height:10px;border-radius:50%;border:1px solid var(--ink)}
+.legend li.mine .sw{background:var(--acc2);border-color:var(--acc2)}
+.legend li.mine{color:var(--ink);font-weight:500}
+.enc2{margin-top:clamp(44px,6vw,80px)}
+.aer{aspect-ratio:2000/2371}
+
+/* ——— 02 your block ——— */
+.facts{margin:0}
+.elev{background:var(--bg2);border-radius:var(--r);padding:clamp(18px,2.6vw,34px)}
+.elev svg{width:100%;height:auto;display:block;overflow:visible}
+.ev-wall{fill:var(--bg2);stroke:var(--ink);stroke-width:.9}
+.ev-ground{fill:var(--bg3);stroke:var(--ink);stroke-width:.9}
+.ev-glass{fill:var(--water);stroke:var(--ink);stroke-width:.5}
+.ev-screen{fill:url(#ev-hatch);stroke:var(--ink);stroke-width:.6}
+.ev-pier{fill:#e6dccb;stroke:var(--ink);stroke-width:.7}
+.ev-door{fill:var(--acc2);stroke:var(--ink);stroke-width:.5}
+.ev-party{stroke:var(--acc);stroke-width:.9;stroke-dasharray:3 2}
+.ev-light{stroke:var(--acc2);stroke-width:1.2}
+.ev-lvl{stroke:var(--ink);stroke-width:.5;stroke-dasharray:1.5 1.5}
+.ev-dim{stroke:var(--ink);stroke-width:.6}
+.ev-txt{font:500 6.6px var(--fb);letter-spacing:.08em;fill:var(--ink)}
+.ev-txt.mu{fill:var(--ink3);letter-spacing:.16em;text-transform:uppercase;font-size:5.6px}
+.ev-txt.acc{fill:var(--acc)}
+.moves{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.moves li{border-top:1px solid var(--line);padding-top:16px;font-size:.92rem;line-height:1.6;color:var(--ink2)}
+.moves b{display:block;font:300 1.35rem/1.2 var(--fd);color:var(--ink);margin-bottom:8px}
+.wide{margin-top:clamp(44px,6vw,80px)}
+.wide .frame{aspect-ratio:21/9}
+
+/* ——— 03 plans ——— */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.tab{height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--line2);color:var(--ink2);font:500 .82rem var(--fb);transition:background .3s,color .3s,border-color .3s}
+.tab:hover{border-color:var(--ink);color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg2);border-color:var(--ink)}
+.planwrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(26px,4vw,56px);align-items:start}
+.planbox{background:var(--bg2);border-radius:var(--r);padding:clamp(16px,2.6vw,38px);position:relative}
+.plan{position:relative;width:100%;max-width:1100px;margin:0 auto}
+.plan img{width:100%;height:auto;display:block}
+.mk{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:var(--acc2);color:var(--ink);font:600 .7rem/1 var(--fb);display:flex;align-items:center;justify-content:center;cursor:default;transition:transform .25s var(--ease),opacity .25s;box-shadow:0 0 0 2px var(--bg2)}
+.mk.r{background:var(--ink);color:var(--bg2)}
+.mk.hi{transform:scale(1.35);z-index:2}
+.mk.dim{opacity:.35}
+.planfoot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;margin-top:18px;font:400 .84rem/1.6 var(--fb);letter-spacing:.01em;color:var(--ink3)}
+.planfoot b{color:var(--ink);font-weight:500}
+.tbtn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:1px solid var(--line2);border-radius:999px;font:500 .72rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);transition:border-color .3s,background .3s}
+.tbtn:hover{border-color:var(--acc2);background:var(--bg3)}
+.tbtn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
+.pside h3{margin:0 0 6px;font:300 1.8rem/1.1 var(--fd)}
+.pside .rt{font:500 .7rem/1.6 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
+.pside p{color:var(--ink2);font-size:.95rem;margin:14px 0 22px}
+.homes{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.homes h4{margin:0 0 8px;display:flex;align-items:center;gap:9px;font:500 .7rem/1.6 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.homes h4 .k{width:10px;height:10px;border-radius:50%;background:var(--acc2)}
+.homes h4 .k.r{background:var(--ink)}
+.rl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rl li{display:grid;grid-template-columns:26px 1fr;gap:6px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.86rem;color:var(--ink2);cursor:default;transition:color .2s}
+.rl li i{font-style:normal;font:500 .7rem/1.9 var(--fb);letter-spacing:.08em;color:var(--ink3)}
+.rl li.hi{color:var(--acc);font-weight:500}
+.rl li.hi i{color:var(--acc)}
+.levels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:clamp(36px,5vw,60px) 0 0;border-top:1px solid var(--line);padding-top:18px}
+.levels .n{font:200 1.6rem/1 var(--fd);color:var(--ink)}
+.levels .l{margin-top:8px;font:500 .7rem/1.6 var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--ink3)}
+.levels .on .n{color:var(--acc)}
+.foot-note{font-size:.84rem;color:var(--ink3);max-width:72ch;margin:26px 0 0;line-height:1.6}
+
+/* ——— 04 materials ——— */
+.mats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin:0 0 clamp(44px,6vw,76px)}
+.mat{border-radius:var(--r2);overflow:hidden;background:var(--bg2)}
+.band .mat{background:var(--bg3)}
+.mat .sw{aspect-ratio:4/3;position:relative}
+.mat .mt{padding:14px 16px 16px}
+.mat .mt i{display:block;font-style:normal;font:500 .7rem/1 var(--fb);letter-spacing:.22em;color:var(--acc);margin-bottom:8px}
+.mat .mt b{display:block;font:300 1.1rem/1.2 var(--fd);margin-bottom:5px;color:var(--ink)}
+.mat .mt span{font-size:.8rem;line-height:1.45;color:var(--ink3)}
+.sw.render{background:#f1efe9}
+.sw.screen{background:#4a3a40;background-image:radial-gradient(circle at 50% 50%,rgba(255,220,170,.55) 0 1.4px,transparent 1.8px);background-size:8px 8px}
+.sw.traver{background:#d2c4a8;background-image:repeating-linear-gradient(180deg,rgba(120,98,66,.14) 0 2px,transparent 2px 9px),repeating-linear-gradient(176deg,rgba(255,255,255,.22) 0 1px,transparent 1px 14px)}
+.sw.oak{background:#a9713c;background-image:repeating-linear-gradient(90deg,rgba(60,30,8,.18) 0 1px,transparent 1px 6px,rgba(255,220,180,.12) 6px 7px,transparent 7px 11px)}
+.sw.glass{background:linear-gradient(150deg,#5b6b78,#2c3842 60%,#1d262e)}
+.sw.glass::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 46%,transparent 52%)}
+.sw.tile{background:#cfccc4;background-image:linear-gradient(90deg,rgba(90,86,78,.35) 0 1px,transparent 1px),linear-gradient(180deg,rgba(90,86,78,.35) 0 1px,transparent 1px);background-size:50% 100%,100% 50%;background-position:-1px 0,0 -1px}
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px) clamp(30px,6vw,88px)}
+.spec h4{margin:0 0 14px;font:300 1.6rem/1.15 var(--fd)}
+
+/* ——— 05 views ——— */
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:clamp(150px,16vw,230px);grid-auto-flow:dense;gap:12px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r2);background:var(--bg3);cursor:zoom-in}
+.gal figure img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figure.big{grid-column:span 2;grid-row:span 2;border-radius:var(--r)}
+.gal figure.tall{grid-row:span 2}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(180deg,transparent,rgba(31,34,39,.8));color:#fff;font:400 .84rem/1.5 var(--fb);letter-spacing:.01em}
+.gal figcaption b{font-weight:600}
+
+/* ——— 06 desk ——— */
+.desk{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,5vw,80px);align-items:start}
+.desk h4{margin:0 0 16px;font:300 1.6rem/1.15 var(--fd)}
+.acts{display:grid;gap:12px;margin-top:28px}
+.act{display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:16px;padding:14px 18px 14px 14px;background:var(--bg2);border:1px solid transparent;border-radius:var(--r2);text-decoration:none;transition:border-color .3s,transform .25s var(--ease)}
+.act:hover{border-color:var(--acc2);transform:translateY(-1px)}
+.act .ic{width:48px;height:48px;border-radius:50%;background:var(--bg3);display:grid;place-items:center;color:var(--acc)}
+.act .ic svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.act b{display:block;font:300 1.1rem/1.2 var(--fd);color:var(--ink)}
+.act span{display:block;font-size:.82rem;color:var(--ink3);margin-top:3px}
+.act i{font-style:normal;font:500 .7rem/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
+.docs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.docs li{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--ink)}
+.docs li span{color:var(--ink3);font-size:.82rem;display:block;margin-top:2px}
+.docs a{font:500 .7rem/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--acc);white-space:nowrap;border:1px solid var(--acc2);border-radius:999px;padding:11px 14px;transition:background .3s}
+.docs a:hover{background:var(--acc-soft)}
+.docs em{font-style:normal;font:500 .7rem/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+.disc{margin:clamp(48px,7vw,88px) 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);max-width:80ch;line-height:1.6}
+.disc b{color:var(--ink);font-weight:500}
+
+/* ——— lightbox ——— */
+.lb{position:fixed;inset:0;top:0;right:0;bottom:0;left:0;z-index:60;background:rgba(244,244,242,.97);color:var(--ink);display:flex;flex-direction:column;overscroll-behavior:contain}
+.lb[hidden]{display:none}
+.lbh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px;font:500 .72rem/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+.lbh button{height:40px;padding:0 18px;border:1px solid var(--line2);border-radius:999px;font:500 .72rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);transition:border-color .3s}
+.lbh button:hover{border-color:var(--ink)}
+.lbh .ctl{display:flex;gap:8px}
+.lbs{flex:1;min-height:0;overflow:auto;display:grid;place-items:center;padding:0 22px}
+.lbs img{max-width:100%;max-height:100%;object-fit:contain;width:auto;height:auto;border-radius:var(--r)}
+.lbs.plan{background:var(--bg2);margin:0 22px;border-radius:var(--r)}
+.lbs.plan img{max-height:100%;padding:22px;border-radius:0}
+.lbs.plan.zoom{display:block;place-items:unset}
+.lbs.plan.zoom img{max-width:none;max-height:none;width:200%;padding:22px}
+.lbf{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px;font-size:.9rem;color:var(--ink2)}
+.lbf .arrows{display:flex;gap:8px}
+.lbf .arrows button{width:44px;height:44px;border:1px solid var(--line2);border-radius:50%;color:var(--ink);display:grid;place-items:center;transition:border-color .3s}
+.lbf .arrows button:hover{border-color:var(--ink)}
+.lbf .arrows svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+body.locked{overflow:hidden}
+
+/* ——— responsive ——— */
+@media (max-width:1180px){
+  .mats{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+  :root{--rail:0px}
+  .bar{display:flex}
+  .rail{transform:translateX(-100%);transition:transform .5s var(--ease);width:min(330px,86vw);box-shadow:0 0 0 100vmax rgba(31,34,39,0)}
+  .rail.open{transform:none;box-shadow:0 0 0 100vmax rgba(31,34,39,.4)}
+  .railclose{display:inline-block;position:absolute;top:22px;right:20px;height:36px;padding:0 14px;border:1px solid var(--line2);border-radius:999px;font:500 .7rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase}
+  .rail .mark{margin-top:4px}
+  main{margin-left:0}
+  html{scroll-padding-top:64px}
+  .hero,.two,.two.rev,.planwrap,.desk{grid-template-columns:1fr}
+  .shead{grid-template-columns:auto 1fr}
+  .shead .smeta{grid-column:1/-1}
+  .moves{grid-template-columns:1fr}
+  .levels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec{grid-template-columns:1fr}
+  .wide .frame{aspect-ratio:16/10}
+}
+@media (max-width:640px){
+  .figs{grid-template-columns:1fr 1fr}
+  .mats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:34vw}
+  .gal figure.big{grid-column:span 2;grid-row:span 1}
+  .homes{grid-template-columns:1fr}
+  .sched div{grid-template-columns:1fr;gap:4px}
+  .act{grid-template-columns:48px 1fr}
+  .act i{display:none}
+  .mk{width:20px;height:20px;margin:-10px 0 0 -10px;font-size:.7rem}
+  .mark .t{letter-spacing:.2em}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .sp-fence{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="mark" href="#welcome"><span class="sb">SB2</span><span class="t">Maitama View</span></a>
+  <button class="idxbtn" id="idxbtn" aria-controls="rail" aria-expanded="false">Index</button>
+</header>
+
+<aside class="rail" id="rail">
+  <button class="railclose" id="railclose">Close</button>
+  <a class="mark" href="#welcome"><span class="sb">SB2</span><span class="t">Maitama View</span></a>
+  <nav class="index" id="index" aria-label="Sheets">
+    <a href="#welcome"><i>00</i><span>Welcome</span></a>
+    <a href="#enclave"><i>01</i><span>The enclave</span></a>
+    <a href="#block"><i>02</i><span>Your block</span></a>
+    <a href="#plans"><i>03</i><span>Floor plans</span></a>
+    <a href="#materials"><i>04</i><span>Materials</span></a>
+    <a href="#views"><i>05</i><span>Views</span></a>
+    <a href="#desk"><i>06</i><span>Your desk</span></a>
+  </nav>
+  <div class="tblock">
+    <dl>
+      <dt>Prepared for</dt><dd>Mr Dikko Ladan</dd>
+      <dt>Property</dt><dd>Block SB2, Maitama View<br>Plot 758, CAD Zone A05</dd>
+      <dt>Prepared by</dt><dd>Mizan Qist Limited</dd>
+      <dt>Issue</dt><dd>01 · October 2026 · Private</dd>
+    </dl>
+  </div>
+</aside>
+
+<main>
+
+<!-- ——— 00 · welcome ——— -->
+<section class="sheet welcome" id="welcome" aria-labelledby="h-welcome">
+  <div class="stamp"><span>Private dossier</span><span>Prepared for Mr Dikko Ladan</span><span>Issue 01 · October 2026</span></div>
+  <div class="hero">
+    <div>
+      <h1 class="h1" id="h-welcome"><small>Maitama View · Block SB2</small>Welcome, Mr Dikko Ladan.</h1>
+      <p class="lede">Block SB2 at Maitama View is yours: both homes of the semi-detached pair, four bedrooms each, behind one gate on Plot 758 in the diplomatic quarter of Abuja. These sheets walk you round the enclave, your block, its floor plans and the materials it is built from.</p>
+      <div class="btns">
+        <a class="btn pri" href="#plans">Open the floor plans <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#enclave">See where it sits</a>
+      </div>
+      <ul class="figs" style="padding-left:0">
+        <li><div class="n num">2</div><div class="l">Homes in your block</div></li>
+        <li><div class="n num">8</div><div class="l">Bedrooms, all en suite</div></li>
+        <li><div class="n num">≈ 504<small>m²</small></div><div class="l">Rooms across both homes</div></li>
+      </ul>
+    </div>
+    <figure style="margin:0">
+      <div class="frame hv">
+        <img src="assets/front-day.jpg" alt="Block SB2 from the avenue by day: two dark perforated screens across the first-floor balconies either side of a central white pier, oak front doors below" fetchpriority="high" width="1800" height="1013">
+      </div>
+      <figcaption class="cap"><b>Block SB2 from the avenue</b> · visualisation</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ——— 01 · the enclave ——— -->
+<section class="sheet band" id="enclave" aria-labelledby="h-enclave">
+  <header class="shead"><span class="sno">Sheet 01 / 06</span><h2 id="h-enclave">The enclave</h2><span class="smeta">Plot 758 · CAD Zone A05 · Maitama</span></header>
+  <div class="two">
+    <div>
+      <h3 class="title">Nine homes behind one gate.</h3>
+      <p class="body">Maitama View is a gated development of nine homes on Plot 758, CAD Zone A05, Maitama District: five detached duplexes along the eastern boundary and two pairs of semi-detached houses on the west, set along a private, palm-lined avenue with a planted island at its heart. A single gate on the access road, with the gatehouse and generator house beside it, is the only way in.</p>
+      <p class="body">Only 28 per cent of the ground is built on. The rest is paving, lawn and planting: a three-metre band of garden inside the boundary wall, twenty-three palms, fifty-four trees and over a thousand shrubs. Your block is the second pair in from the gate, on the island side of the avenue, with the largest detached house beyond it.</p>
+      <dl class="sched" style="margin-top:28px">
+        <div><dt>Site</dt><dd>3,273.9 m², five-sided; 40 m wide at the road, 66 m deep on the east</dd></div>
+        <div><dt>Built on</dt><dd>923.5 m² · 28.2 per cent of the ground</dd></div>
+        <div><dt>Homes</dt><dd>Nine: five detached duplexes (V1–V5) and two semi-detached pairs (SA, SB2)</dd></div>
+        <div><dt>Avenue</dt><dd>6 m, private, the length of the site, with a planted island</dd></div>
+        <div><dt>Planting</dt><dd>3 m band inside the wall · 23 palms · 54 trees · 1,072 shrubs</dd></div>
+        <div><dt>Gate</dt><dd>Single gated entry; gatehouse 7.8 × 3.4 m with guard room, kitchenette, WC and a 9 m² generator house</dd></div>
+        <div><dt>Boundary</dt><dd>900 mm wall between 450 × 450 mm reinforced-concrete columns, steel railing above</dd></div>
+        <div><dt>Architects</dt><dd>Abdullahi Ndanusa &amp; Arc. Daniel S. Akpama · working drawings July 2026</dd></div>
+      </dl>
+    </div>
+    <div>
+      <div class="sitebox">
+        <div class="siteplan" id="siteplan" role="img" aria-label="Site plan of Plot 758: a five-sided plot with the access road along its north-eastern edge. A gate opens onto a private avenue running south-west, with five detached duplexes along the eastern boundary and two semi-detached pairs on the west. Block SB2, the second pair from the gate, is highlighted."><svg id="sitesvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+        <div class="sitecap" id="sitecap" aria-live="polite"><b>SB2</b><i>Your block</i><br>Semi-detached pair · both homes · hover any building</div>
+        <ul class="legend" id="legend">
+          <li class="mine" data-t="s" data-id="SB2"><span class="sw"></span>SB2 · yours</li>
+          <li data-t="s" data-id="SA"><span class="sw"></span>SA · semi-detached pair</li>
+          <li data-t="d1"><span class="sw"></span>V1–V4 · detached duplex I</li>
+          <li data-t="d2"><span class="sw"></span>V5 · detached duplex II</li>
+          <li data-t="gh"><span class="sw"></span>Gatehouse</li>
+        </ul>
+      </div>
+      <p class="cap">Site plan drawn in metres from the site layout drawing · north arrow and 10 m scale on the sheet</p>
+    </div>
+  </div>
+  <div class="two rev enc2">
+    <figure style="margin:0">
+      <div class="frame aer"><img src="assets/aerial.jpg" alt="The enclave from above: the two semi-detached pairs on the west of the avenue, the row of five detached duplexes on the east, palms along the avenue" loading="lazy" width="1518" height="1800"></div>
+      <figcaption class="cap"><b>From above</b> · the two semi-detached pairs on the west of the avenue, the detached row on the east</figcaption>
+    </figure>
+    <div>
+      <h3 class="title">The avenue is the address.</h3>
+      <p class="body">From the gate, the avenue runs the length of the site between the planted band on one side and the row of detached houses on the other. Every home has a paved plot of its own with parking at the door, beneath the oversailing upper floors, and the avenue's island of palms and trees sits directly in front of your block.</p>
+      <p class="body">The gatehouse at the entrance has a guard room, kitchenette and WC, with the generator house behind a fire-rated steel door. The boundary wall is a 900 mm sancrete wall with concrete infill between reinforced-concrete columns, a hollow-section steel railing above and precast copings throughout.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ——— 02 · your block ——— -->
+<section class="sheet" id="block" aria-labelledby="h-block">
+  <header class="shead"><span class="sno">Sheet 02 / 06</span><h2 id="h-block">Your block</h2><span class="smeta">SB2 · semi-detached pair · both homes</span></header>
+  <div class="two">
+    <div>
+      <h3 class="title">Two homes under one roof.</h3>
+      <p class="lede">SB2 is a pair of mirrored houses about a party wall, and both halves are yours. Each home is 7.5 by 12 metres at ground, growing to 8.7 by 13.9 metres on the two bedroom floors above, with four en-suite bedrooms, a family living room, a balcony on each upper floor and parking at its own front door.</p>
+      <dl class="sched facts">
+        <div><dt>Type</dt><dd>Semi-detached pair · both homes</dd></div>
+        <div><dt>Footprint</dt><dd>7.5 × 12 m per home at ground · 15 × 12 m the pair</dd></div>
+        <div><dt>Upper floors</dt><dd>8.7 × 13.9 m per home · 17.4 × 13.9 m the pair</dd></div>
+        <div><dt>Storeys</dt><dd>Three: living floor at ground, family floor above, master floor on top</dd></div>
+        <div><dt>Bedrooms</dt><dd>Four per home, every one en suite · eight across the block</dd></div>
+        <div><dt>Rooms</dt><dd>≈ 252 m² per home · ≈ 504 m² across both (indicative)</dd></div>
+        <div><dt>Levels</dt><dd class="num">Ground ±0.00 · first +4.05 · second +7.65 · roof +12.45 m</dd></div>
+        <div><dt>Position</dt><dd>West of the avenue, second pair from the gate; the planted island at the door, V5 beyond</dd></div>
+      </dl>
+    </div>
+    <div>
+      <div class="elev" role="img" aria-label="Schematic front elevation of Block SB2: a set-back ground floor of glass with two oak doors beside a central pier, two white upper floors oversailing it, perforated screens across the first-floor balconies, and level markers at ground, +4.05, +7.65 and +12.45 metres.">
+        <svg viewBox="-8 -10 236 158" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><pattern id="ev-hatch" width="3" height="3" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".55" fill="currentColor" style="color:var(--ink)"/></pattern></defs>
+          <!-- ground floor, set back -->
+          <rect class="ev-ground" x="12" y="84" width="150" height="40.5"/>
+          <rect class="ev-glass" x="18" y="92" width="50" height="30"/>
+          <rect class="ev-glass" x="106" y="92" width="50" height="30"/>
+          <rect class="ev-door" x="72" y="96" width="8" height="26"/>
+          <rect class="ev-door" x="94" y="96" width="8" height="26"/>
+          <!-- upper floors oversailing -->
+          <rect class="ev-wall" x="0" y="0" width="174" height="84"/>
+          <line class="ev-lvl" x1="0" y1="48" x2="174" y2="48"/>
+          <line class="ev-lvl" x1="0" y1="12" x2="174" y2="12"/>
+          <rect class="ev-screen" x="8" y="52" width="62" height="30"/>
+          <rect class="ev-screen" x="104" y="52" width="62" height="30"/>
+          <rect class="ev-glass" x="10" y="16" width="58" height="28"/>
+          <rect class="ev-glass" x="106" y="16" width="58" height="28"/>
+          <rect class="ev-pier" x="80" y="0" width="14" height="124.5"/>
+          <line class="ev-party" x1="87" y1="-4" x2="87" y2="128"/>
+          <!-- light lines beneath slab edges -->
+          <line class="ev-light" x1="2" y1="84" x2="78" y2="84"/><line class="ev-light" x1="96" y1="84" x2="172" y2="84"/>
+          <line class="ev-light" x1="2" y1="48" x2="78" y2="48"/><line class="ev-light" x1="96" y1="48" x2="172" y2="48"/>
+          <!-- ground line -->
+          <line class="ev-dim" x1="-6" y1="124.5" x2="200" y2="124.5"/>
+          <!-- levels -->
+          <g class="ev-txt">
+            <line class="ev-dim" x1="176" y1="0" x2="186" y2="0"/><text x="189" y="2.2" class="ev-txt acc">+12.45 roof</text>
+            <line class="ev-dim" x1="176" y1="48" x2="186" y2="48"/><text x="189" y="50.2" class="ev-txt">+7.65 second</text>
+            <line class="ev-dim" x1="176" y1="84" x2="186" y2="84"/><text x="189" y="86.2" class="ev-txt">+4.05 first</text>
+            <text x="189" y="126.7" class="ev-txt">±0.00 ground</text>
+          </g>
+          <!-- dimensions -->
+          <line class="ev-dim" x1="0" y1="136" x2="174" y2="136"/><line class="ev-dim" x1="0" y1="133" x2="0" y2="139"/><line class="ev-dim" x1="174" y1="133" x2="174" y2="139"/>
+          <text x="87" y="144" text-anchor="middle" class="ev-txt">17.4 m · upper floors</text>
+          <line class="ev-dim" x1="12" y1="130" x2="162" y2="130"/><line class="ev-dim" x1="12" y1="127.5" x2="12" y2="132.5"/><line class="ev-dim" x1="162" y1="127.5" x2="162" y2="132.5"/>
+          <text x="40" y="-4" class="ev-txt mu">left-hand home</text><text x="134" y="-4" text-anchor="middle" class="ev-txt mu">right-hand home</text>
+          <text x="87" y="-4" text-anchor="middle" class="ev-txt acc">party wall</text>
+        </svg>
+      </div>
+      <p class="cap"><b>Front elevation, schematic</b> · 1 unit = 100 mm · levels from the working drawings; the ground floor is 15 m wide, the upper floors 17.4 m</p>
+    </div>
+  </div>
+  <ul class="moves">
+    <li><b>Floors that float</b>The ground floor is glass and stone, set back beneath the house. The two bedroom floors above oversail it on every side, so the car stands under cover at the door.</li>
+    <li><b>A screen across the balcony</b>Each first-floor balcony sits behind a dark perforated panel, a lattice of small triangular openings that filters the sun by day and glows from within at night.</li>
+    <li><b>Light along every edge</b>A continuous strip of warm light is recessed beneath every slab edge and canopy, so the house reads as a set of floating white planes after dark.</li>
+  </ul>
+  <figure class="wide" style="margin-left:0;margin-right:0">
+    <div class="frame"><img src="assets/hero-dusk.jpg" alt="The semi-detached pair at dusk, each slab edge outlined by a line of warm light, a car parked beneath the oversailing first floor" loading="lazy" width="1800" height="1013"></div>
+    <figcaption class="cap"><b>The pair at dusk</b> · a line of light beneath every slab edge</figcaption>
+  </figure>
+</section>
+
+<!-- ——— 03 · floor plans ——— -->
+<section class="sheet" id="plans" aria-labelledby="h-plans">
+  <header class="shead"><span class="sno">Sheet 03 / 06</span><h2 id="h-plans">Floor plans</h2><span class="smeta">Working drawings · July 2026 · not to scale</span></header>
+  <h3 class="title">Three floors, read room by room.</h3>
+  <p class="lede">The pair as drawn, both homes on each sheet: the left-hand home and the right-hand home mirror one another about the party wall. Hover a number, or a room in the list.</p>
+  <div class="tabs" role="tablist" aria-label="Floor">
+    <button class="tab" role="tab" aria-selected="true" data-floor="ground">Ground floor</button>
+    <button class="tab" role="tab" aria-selected="false" data-floor="first">First floor</button>
+    <button class="tab" role="tab" aria-selected="false" data-floor="second">Second floor</button>
+  </div>
+  <div class="planwrap">
+    <div class="planbox">
+      <div class="plan" id="plan">
+        <img src="assets/plan-s-ground.png" alt="" id="planimg" width="1905" height="1645">
+        <div id="labels"></div>
+      </div>
+      <div class="planfoot"><span id="planlab"></span><button class="tbtn" id="enlarge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Enlarge</button></div>
+    </div>
+    <div class="pside" id="pside"></div>
+  </div>
+  <div class="levels num" id="levels">
+    <div data-f="ground"><div class="n">±0.00</div><div class="l">Ground floor · living</div></div>
+    <div data-f="first"><div class="n">+4.05</div><div class="l">First floor · family</div></div>
+    <div data-f="second"><div class="n">+7.65</div><div class="l">Second floor · master</div></div>
+    <div><div class="n">+12.45</div><div class="l">Roof · parapet, metres</div></div>
+  </div>
+  <p class="foot-note">Plans redrawn from the architectural working drawings of July 2026 with dimensions and annotations removed; the numbered markers sit where the rooms are labelled on the sheets. Layouts and areas are indicative until handover.</p>
+</section>
+
+<!-- ——— 04 · materials ——— -->
+<section class="sheet band" id="materials" aria-labelledby="h-materials">
+  <header class="shead"><span class="sno">Sheet 04 / 06</span><h2 id="h-materials">Materials &amp; specification</h2><span class="smeta">Schedules · working drawings July 2026</span></header>
+  <h3 class="title">What it is built from.</h3>
+  <p class="lede">Finishes and systems as set out in the architectural working drawings and their door, window and curtain-wall schedules. Selections shown in the visualisations are indicative of quality and tone.</p>
+  <div class="mats" style="margin-top:40px">
+    <div class="mat"><div class="sw render"></div><div class="mt"><i>M01</i><b>White render</b><span>12 mm plaster, primed, two coats of emulsion</span></div></div>
+    <div class="mat"><div class="sw screen"></div><div class="mt"><i>M02</i><b>Perforated screen</b><span>Dark lattice panel across each first-floor balcony</span></div></div>
+    <div class="mat"><div class="sw traver"></div><div class="mt"><i>M03</i><b>Travertine</b><span>Full-height piers beside the screens and at the entrance</span></div></div>
+    <div class="mat"><div class="sw oak"></div><div class="mt"><i>M04</i><b>Oak &amp; teak</b><span>Oak-faced front doors; teak-veneered flush doors within</span></div></div>
+    <div class="mat"><div class="sw glass"></div><div class="mt"><i>M05</i><b>Tinted glass</b><span>6 mm toughened, in powder-coated aluminium</span></div></div>
+    <div class="mat"><div class="sw tile"></div><div class="mt"><i>M06</i><b>Vitrified tile</b><span>10 mm floor tiles on a 50 mm screed throughout</span></div></div>
+  </div>
+  <div class="spec">
+    <div>
+      <h4>Structure &amp; envelope</h4>
+      <dl class="sched">
+        <div><dt>Frame</dt><dd>Reinforced-concrete frame on pad foundations at −1.5 m; 200 mm in-situ ground slab; 4.05 m ground to first floor, 3.6 m floor to floor above, the upper floors oversailing the ground-floor walls</dd></div>
+        <div><dt>Walls</dt><dd>230 mm blockwork, 12 mm plaster-rendered, primed and finished with two coats of emulsion to a RAL-approved colour; travertine-faced piers; the balcony screens in a dark perforated panel</dd></div>
+        <div><dt>Roof</dt><dd>150 mm reinforced-concrete roof cover to the semi-detached houses, behind a parapet capped in 0.7 mm colour-coated aluminium at +12.45 m</dd></div>
+        <div><dt>Curtain walls</dt><dd>Powder-coated aluminium curtain walling on 1.5 mm NIGALEX profiles, glazed in 6 mm tinted toughened safety glass to the living room and the second-floor front</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h4>Doors &amp; windows</h4>
+      <dl class="sched">
+        <div><dt>Entrance</dt><dd>Single-leaf steel security pivot door with reinforced leaf and frame, multi-point locking, tamper-proof hinges and weather seals, to Israeli standard or approved equivalent</dd></div>
+        <div><dt>Terrace</dt><dd>Three-leaf sliding glass doors in powder-coated aluminium, 6 mm tinted toughened glass, with concealed track, floor guide and soft-close</dd></div>
+        <div><dt>Internal</dt><dd>38 mm solid-core flush doors in polished teak veneer on 40 × 90 mm hardwood frames, fire-rated E60 with intumescent and smoke seals</dd></div>
+        <div><dt>Windows</dt><dd>Outward-swing awning and triple-leaf casement windows in white powder-coated aluminium, 6 mm clear or tinted toughened glass, aluminium lever handles and friction stays</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h4>Finishes &amp; rooms</h4>
+      <dl class="sched">
+        <div><dt>Floors</dt><dd>10 mm vitrified floor tiles on a 50 mm cement screed throughout, over the 200 mm ground slab and the upper-floor slabs</dd></div>
+        <div><dt>Kitchen</dt><dd>Fitted kitchen with island unit to the joinery details in the drawing set, with a store beside it</dd></div>
+        <div><dt>Bedrooms</dt><dd>Every bedroom en suite; fitted wardrobes to the wardrobe details; a walk-in closet to the master suite; a visitors' WC at the entrance</dd></div>
+        <div><dt>Balconies</dt><dd>Glass balustrades; the first-floor balcony behind the perforated screen, the second-floor balcony beneath the roof overhang</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h4>Site &amp; services</h4>
+      <dl class="sched">
+        <div><dt>Boundary</dt><dd>900 mm sancrete block wall with concrete infill between 450 × 450 mm reinforced-concrete columns, 50 × 50 mm hollow-section steel railing above, precast concrete copings</dd></div>
+        <div><dt>Gatehouse</dt><dd>7.8 × 3.4 m at the gate: guard room, kitchenette and WC, with a 9 m² generator house behind a fire-rated steel door</dd></div>
+        <div><dt>Landscape</dt><dd>Three-metre planted band inside the boundary wall; 23 palms at 3 m, 54 trees and 1,072 holly-bush shrubs; the planted island on the avenue</dd></div>
+        <div><dt>Arrival</dt><dd>A single gated entry from the access road; the 6 m private avenue; a paved plot at the block with parking at each front door beneath the oversailing floor</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ——— 05 · views ——— -->
+<section class="sheet band" id="views" aria-labelledby="h-views">
+  <header class="shead"><span class="sno">Sheet 05 / 06</span><h2 id="h-views">Views</h2><span class="smeta">Visualisations · artists' impressions</span></header>
+  <h3 class="title">Eight views of the enclave.</h3>
+  <p class="lede" style="margin-bottom:36px">Your block first, then the avenue and the row across from it. Open any view full screen.</p>
+  <div class="gal" id="gal">
+    <figure class="big" data-lb="0"><img src="assets/front-day.jpg" alt="Block SB2 from the avenue by day" loading="lazy"><figcaption><b>SB2 by day</b> · two screens, one pier</figcaption></figure>
+    <figure data-lb="1"><img src="assets/hero-dusk.jpg" alt="The pair at dusk" loading="lazy"><figcaption><b>SB2 at dusk</b> · light under every edge</figcaption></figure>
+    <figure data-lb="2"><img src="assets/avenue-corner.jpg" alt="From the avenue towards the semi-detached pair" loading="lazy"><figcaption><b>From the avenue</b> · towards the pair</figcaption></figure>
+    <figure class="tall" data-lb="3"><img src="assets/aerial.jpg" alt="The enclave from above" loading="lazy"><figcaption><b>From above</b> · the enclave</figcaption></figure>
+    <figure data-lb="4"><img src="assets/hero-terrace.jpg" alt="The row of detached duplexes from the avenue" loading="lazy"><figcaption><b>The row from the avenue</b> · across from SB2</figcaption></figure>
+    <figure data-lb="5"><img src="assets/row.jpg" alt="The row of five detached duplexes" loading="lazy"><figcaption><b>The row</b> · five detached duplexes</figcaption></figure>
+    <figure data-lb="6"><img src="assets/corner.jpg" alt="A detached duplex from the corner" loading="lazy"><figcaption><b>The corner</b> · the cantilever</figcaption></figure>
+    <figure data-lb="7"><img src="assets/avenue.jpg" alt="Along the avenue" loading="lazy"><figcaption><b>The avenue</b> · along the row</figcaption></figure>
+  </div>
+</section>
+
+<!-- ——— 06 · your desk ——— -->
+<section class="sheet" id="desk" aria-labelledby="h-desk">
+  <header class="shead"><span class="sno">Sheet 06 / 06</span><h2 id="h-desk">Your desk</h2><span class="smeta">Mizan Qist Limited · Abuja · London</span></header>
+  <div class="desk">
+    <div>
+      <h3 class="title">Your desk at Mizan Qist.</h3>
+      <p class="lede">For anything about SB2 — a site visit, a document, a question about a finish or a date — one message reaches us, at any hour.</p>
+      <div class="acts">
+        <a class="act" id="wa" href="https://wa.me/447931814601?text=Good%20day%2C%20this%20is%20Dikko%20Ladan%20regarding%20Block%20SB2%20at%20Maitama%20View." target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.2 19L4 20z"/><path d="M9.5 9.5c.3 2 2.5 4.2 4.8 4.8l1.2-1.2 2 .9-.4 1.6c-3.5.6-8.4-4.1-7.9-7.6l1.6-.4.9 2-1.2 1.2"/></svg></span><span><b>WhatsApp</b><span>+44 7931 814601 · a message is pre-filled for you</span></span><i>Message</i></a>
+        <a class="act" href="tel:+2348086666206"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><b>Call Abuja</b><span>+234 808 6666 206</span></span><i>Call</i></a>
+        <a class="act" href="mailto:mizanqistltd@gmail.com?subject=Block%20SB2%2C%20Maitama%20View%20%E2%80%94%20Mr%20Dikko%20Ladan"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><b>Email</b><span>mizanqistltd@gmail.com</span></span><i>Write</i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Documents</h4>
+      <ul class="docs">
+        <li class="self"><div>SB2 dossier, print edition<span>These sheets as a twelve-page A4 PDF</span></div><a href="sb2-maitama-view.pdf" target="_blank" rel="noopener">Download</a></li>
+        <li><div>Maitama View brochure<span>Ten-page print edition of the full development, PDF</span></div><a href="https://mizanqist.github.io/maitama-view/maitama-view-brochure.pdf" target="_blank" rel="noopener">Download</a></li>
+        <li><div>Architectural working drawings<span>Plot 758 full set, July 2026</span></div><em>On request</em></li>
+        <li><div>Structural drawings<span>Semi-detached block, July 2026</span></div><em>On request</em></li>
+        <li><div>Door, window &amp; curtain-wall schedules<span>Part of the working drawings</span></div><em>On request</em></li>
+      </ul>
+    </div>
+  </div>
+  <p class="disc"><b>Prepared by Mizan Qist Limited for Mr Dikko Ladan</b> · Issue 01 · October 2026 · Private, not for circulation. Visualisations are artists' impressions. Areas, dimensions and levels are taken from the architectural working drawings of July 2026 and are indicative until handover; finishes are as scheduled and may be substituted with approved equivalents.</p>
+</section>
+
+</main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged view" hidden>
+  <div class="lbh"><span id="lbcnt">01 / 08</span><div class="ctl"><button id="zoom" hidden>Zoom</button><button id="lbclose">Close</button></div></div>
+  <div class="lbs" id="lbs"><img id="lbimg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
+  <div class="lbf"><span id="lbcap"></span><div class="arrows"><button id="lbprev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button id="lbnext" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div></div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function asset(p){ return (window.__assets && window.__assets[p]) || p; }
+
+  /* ——— rail: active sheet, phone index ——— */
+  var links = $$('#index a'), rail = $('#rail'), idxbtn = $('#idxbtn');
+  function setActive(id){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#'+id); }); }
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) setActive(e.target.id); }); }, {rootMargin:'-40% 0px -55% 0px', threshold:0});
+  $$('main .sheet').forEach(function(s){ io.observe(s); });
+  function openRail(o){ rail.classList.toggle('open', o); idxbtn.setAttribute('aria-expanded', String(o)); }
+  idxbtn.addEventListener('click', function(){ openRail(!rail.classList.contains('open')); });
+  $('#railclose').addEventListener('click', function(){ openRail(false); });
+  links.forEach(function(a){ a.addEventListener('click', function(){ openRail(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && rail.classList.contains('open')) openRail(false); });
+
+  /* ——— site plan: metres from the site layout drawing, 1 m = 6 units ——— */
+  var K = 6, NS = 'http://www.w3.org/2000/svg';
+  var LOT = [[35.49,0],[0,33.58],[15.38,82.24],[38.16,82.24],[67.14,24.02]];
+  var HOUSES = [
+    {id:'V1', t:'d1', pts:[[58.4,33.9],[46.1,27.8],[49.6,20.9],[61.8,27.0]]},
+    {id:'V2', t:'d1', pts:[[52.6,45.6],[40.4,39.5],[43.8,32.5],[56.0,38.7]]},
+    {id:'V3', t:'d1', pts:[[46.8,57.2],[34.6,51.1],[38.0,44.2],[50.3,50.3]]},
+    {id:'V4', t:'d1', pts:[[41.0,68.8],[28.8,62.7],[32.2,55.8],[44.5,61.9]]},
+    {id:'V5', t:'d2', pts:[[22.73,65.45],[18.99,73.1],[32.61,78.89],[36.03,72.05]]},
+    {id:'SA', t:'s', pts:[[30.2,25.1],[22.0,16.7],[32.9,6.0],[41.1,14.4]], party:[[27.45,11.35],[35.65,19.75]]},
+    {id:'SB2', t:'s', mine:true, pts:[[12.2,42.5],[4.0,34.0],[14.9,23.4],[23.2,31.9]], party:[[9.45,28.7],[17.7,37.2]]}
+  ];
+  var ISLAND = [[27.21,40.68],[25.27,44.64],[21.85,51.59],[19.94,55.32],[16.91,60.93],[15.43,60.93],[12.57,53.24],[12.53,51.13],[18.21,45.59],[25.09,38.96],[26.68,39.03]];
+  var AVENUE = [[45.7,11.9],[50.8,15.3],[43.0,22.7],[23.4,63.3],[17.5,60.5],[12.6,53.2],[12.5,51.1],[18.9,38.1],[36.5,20.8]];
+  var INFO = {
+    d1:{h:'Detached duplex I', t:'Five bedrooms · three storeys', s:'8 × 14 m at ground, 10.4 × 16.25 m above; about 345 m² of rooms.'},
+    d2:{h:'Detached duplex II', t:'Five bedrooms · lounge on two floors', s:'The largest home, at the far end of the row: 8.9 × 15.2 m at ground; about 377 m² of rooms.'},
+    s:{h:'Semi-detached pair', t:'Four bedrooms each · two homes', s:'Two mirrored homes about a party wall, each 7.5 × 12 m at ground; about 252 m² of rooms per home.'},
+    gh:{h:'Gatehouse', t:'At the gate', s:'7.8 × 3.4 m beside the entrance: guard room, kitchenette and WC, with the 9 m² generator house behind a fire-rated steel door.'}
+  };
+  function el(n, a, parent){ var e = document.createElementNS(NS, n); for(var k in a) e.setAttribute(k, a[k]); parent.appendChild(e); return e; }
+  function P(p){ return (p[0]*K).toFixed(1)+','+(p[1]*K).toFixed(1); }
+  function pts(arr){ return arr.map(P).join(' '); }
+  function inset(poly, dist){
+    var n = poly.length, cx = 0, cy = 0; poly.forEach(function(p){ cx += p[0]/n; cy += p[1]/n; });
+    var lines = poly.map(function(a, i){ var b = poly[(i+1)%n], dx = b[0]-a[0], dy = b[1]-a[1], L = Math.hypot(dx,dy), nx = -dy/L, ny = dx/L; if((cx-a[0])*nx + (cy-a[1])*ny < 0){ nx = -nx; ny = -ny; } return [a[0]+nx*dist, a[1]+ny*dist, b[0]+nx*dist, b[1]+ny*dist]; });
+    return poly.map(function(_, i){ var A = lines[(i-1+n)%n], C = lines[i]; var x1=A[0],y1=A[1],x2=A[2],y2=A[3],x3=C[0],y3=C[1],x4=C[2],y4=C[3]; var den = (x1-x2)*(y3-y4)-(y1-y2)*(x3-x4); return [((x1*y2-y1*x2)*(x3-x4)-(x1-x2)*(x3*y4-y3*x4))/den, ((x1*y2-y1*x2)*(y3-y4)-(y1-y2)*(x3*y4-y3*x4))/den]; });
+  }
+  function smooth(arr){ var n = arr.length, s = ''; for(var i=0;i<n;i++){ var a = arr[i], b = arr[(i+1)%n]; var mx = (a[0]+b[0])/2, my = (a[1]+b[1])/2; if(i===0) s += 'M'+P([mx,my]); var c = arr[(i+1)%n], nb = arr[(i+2)%n]; s += ' Q'+P(b)+' '+P([(c[0]+nb[0])/2,(c[1]+nb[1])/2]); } return s+'Z'; }
+  function buildSite(svg){
+    var cxs = 0, cys = 0; LOT.forEach(function(p){ cxs += p[0]/LOT.length; cys += p[1]/LOT.length; });
+    var A = LOT[0], B = LOT[4], ux = B[0]-A[0], uy = B[1]-A[1], L = Math.hypot(ux,uy); ux/=L; uy/=L;
+    var nox = uy, noy = -ux; if((cxs-A[0])*nox + (cys-A[1])*noy > 0){ nox = -nox; noy = -noy; }
+    var ra = [A[0]-9*ux, A[1]-9*uy], rb = [B[0]+9*ux, B[1]+9*uy];
+    el('polygon', {'class':'sp-road', points: pts([ra, rb, [rb[0]+9*nox, rb[1]+9*noy], [ra[0]+9*nox, ra[1]+9*noy]])}, svg);
+    var rm = [(A[0]+B[0])/2 + 5.2*nox, (A[1]+B[1])/2 + 5.2*noy], ang = Math.atan2(uy,ux)*180/Math.PI;
+    el('text', {'class':'sp-txt', transform:'translate('+(rm[0]*K)+','+(rm[1]*K)+') rotate('+ang.toFixed(1)+')', 'text-anchor':'middle', 'dominant-baseline':'middle'}, svg).textContent = 'Access road';
+    el('polygon', {'class':'sp-band', points: pts(LOT)}, svg);
+    el('polygon', {'class':'sp-in', points: pts(inset(LOT, 3))}, svg);
+    el('polygon', {'class':'sp-ave', points: pts(AVENUE)}, svg);
+    el('path', {'class':'sp-isl', d: smooth(ISLAND)}, svg);
+    var tg = 18.35, g1 = [A[0]+(tg-3)*ux, A[1]+(tg-3)*uy], g2 = [A[0]+(tg+3)*ux, A[1]+(tg+3)*uy];
+    el('path', {'class':'sp-fence', d:'M'+P(g2)+' L'+P(LOT[4])+' L'+P(LOT[3])+' L'+P(LOT[2])+' L'+P(LOT[1])+' L'+P(LOT[0])+' L'+P(g1), pathLength:'1'}, svg);
+    el('line', {'class':'sp-gate', x1:g1[0]*K, y1:g1[1]*K, x2:g2[0]*K, y2:g2[1]*K}, svg);
+    /* palms and trees along the band, skipping the gate */
+    var edges = [[0,1],[1,2],[2,3],[3,4],[4,0]], acc = 0, accT = 2.1;
+    edges.forEach(function(e){
+      var a = LOT[e[0]], b = LOT[e[1]], dx = b[0]-a[0], dy = b[1]-a[1], len = Math.hypot(dx,dy), ex = dx/len, ey = dy/len;
+      var nx = ey, ny = -ex; if((cxs-a[0])*nx + (cys-a[1])*ny < 0){ nx = -nx; ny = -ny; }
+      var s, t;
+      for(s = acc; s < len; s += 9.9){ var q = [a[0]+ex*s+nx*1.6, a[1]+ey*s+ny*1.6]; if(Math.hypot(q[0]-(A[0]+tg*ux), q[1]-(A[1]+tg*uy)) < 6.5) continue; el('circle', {'class':'sp-palm', cx:q[0]*K, cy:q[1]*K, r:1.7*K}, svg); }
+      acc = s - len;
+      for(t = accT; t < len; t += 4.2){ var q2 = [a[0]+ex*t+nx*2.2, a[1]+ey*t+ny*2.2]; if(Math.hypot(q2[0]-(A[0]+tg*ux), q2[1]-(A[1]+tg*uy)) < 6.5) continue; el('circle', {'class':'sp-tree', cx:q2[0]*K, cy:q2[1]*K, r:1.05*K}, svg); }
+      accT = t - len;
+    });
+    [[19.5,49.5],[17.5,57]].forEach(function(q){ el('circle', {'class':'sp-palm', cx:q[0]*K, cy:q[1]*K, r:1.7*K}, svg); });
+    [[23.6,43.2],[22.2,47.5],[15.9,53.5],[20.6,53.5]].forEach(function(q){ el('circle', {'class':'sp-tree', cx:q[0]*K, cy:q[1]*K, r:1.05*K}, svg); });
+    /* gatehouse */
+    var gc = [A[0]+9.85*ux - 3.2*nox, A[1]+9.85*uy - 3.2*noy], hw = 3.9, hd = 1.7, nix = -nox, niy = -noy;
+    var ghp = [[gc[0]-hw*ux-hd*nix, gc[1]-hw*uy-hd*niy],[gc[0]+hw*ux-hd*nix, gc[1]+hw*uy-hd*niy],[gc[0]+hw*ux+hd*nix, gc[1]+hw*uy+hd*niy],[gc[0]-hw*ux+hd*nix, gc[1]-hw*uy+hd*niy]];
+    var gh = el('polygon', {'class':'sp-gh', points: pts(ghp), 'data-t':'gh', tabindex:'0', role:'button', 'aria-label':'Gatehouse'}, svg);
+    /* houses */
+    var groups = [];
+    HOUSES.forEach(function(h){
+      var g = el('g', {'data-t':h.t, 'data-id':h.id}, svg);
+      var poly = el('polygon', {'class':'sp-house'+(h.mine?' mine':''), points: pts(h.pts), tabindex:'0', role:'button', 'aria-label':h.id+', '+INFO[h.t].h+(h.mine?', your block':'')}, g);
+      if(h.party){ var p0 = h.party[0], p1 = h.party[1], mx0 = (p0[0]+p1[0])/2, my0 = (p0[1]+p1[1])/2, dxp = p1[0]-p0[0], dyp = p1[1]-p0[1], Lp = Math.hypot(dxp,dyp), gx = dxp/Lp*2.6, gy = dyp/Lp*2.6, st = 'stroke:'+(h.mine?'var(--ink)':'var(--ink)')+';stroke-width:.9;pointer-events:none;opacity:.8'; el('line', {x1:p0[0]*K, y1:p0[1]*K, x2:(mx0-gx)*K, y2:(my0-gy)*K, style:st}, g); el('line', {x1:(mx0+gx)*K, y1:(my0+gy)*K, x2:p1[0]*K, y2:p1[1]*K, style:st}, g); }
+      var cx = 0, cy = 0; h.pts.forEach(function(p){ cx += p[0]/4; cy += p[1]/4; });
+      el('text', {'class':'sp-hl'+(h.mine?' mine':''), x:cx*K, y:cy*K, 'text-anchor':'middle', 'dominant-baseline':'middle'}, g).textContent = h.id;
+      groups.push({g:g, poly:poly, h:h});
+    });
+    /* leader to your block */
+    el('path', {'class':'sp-lead', d:'M'+P([13.6,33])+' L'+P([-4,20])+' L'+P([-14,20])}, svg);
+    el('text', {'class':'sp-txt big', x:-14*K, y:18.2*K}, svg).textContent = 'Your block';
+    /* labels, north, scale */
+    var gm = [A[0]+tg*ux + 1.4*nox, A[1]+tg*uy + 1.4*noy];
+    el('text', {'class':'sp-txt', transform:'translate('+(gm[0]*K)+','+(gm[1]*K)+') rotate('+ang.toFixed(1)+')', 'text-anchor':'middle', 'dominant-baseline':'middle', style:'fill:var(--acc)'}, svg).textContent = 'Gate';
+    el('text', {'class':'sp-txt', transform:'translate('+(36.5*K)+','+(33*K)+') rotate(-62)', 'text-anchor':'middle'}, svg).textContent = 'The avenue';
+    el('text', {'class':'sp-txt', x:19.6*K, y:50.8*K, 'text-anchor':'middle', style:'font-size:8px'}, svg).textContent = 'Island';
+    el('text', {'class':'sp-txt big', x:1*K, y:(-6)*K}, svg).textContent = 'Plot 758 · 3,274 m²';
+    el('text', {'class':'sp-txt', x:1*K, y:(-3.4)*K}, svg).textContent = 'CAD Zone A05 · Maitama';
+    var ng = el('g', {transform:'translate('+(76*K)+','+(58*K)+')'}, svg); el('circle', {'class':'sp-n', r:9}, ng); el('path', {d:'M0 -6 L3 4 L0 2 L-3 4 Z', style:'fill:var(--ink)'}, ng); el('text', {'class':'sp-txt', x:0, y:22, 'text-anchor':'middle'}, ng).textContent = 'N';
+    el('line', {'class':'sp-scale', x1:1*K, y1:86*K, x2:11*K, y2:86*K}, svg); el('line', {'class':'sp-scale', x1:1*K, y1:84.6*K, x2:1*K, y2:87.4*K}, svg); el('line', {'class':'sp-scale', x1:11*K, y1:84.6*K, x2:11*K, y2:87.4*K}, svg);
+    el('text', {'class':'sp-txt', x:12.4*K, y:86.9*K}, svg).textContent = '10 m';
+    svg.setAttribute('viewBox', '-18 -66 505 600');
+    return {groups:groups, gh:gh};
+  }
+  var sitesvg = $('#sitesvg'), site = buildSite(sitesvg), sitecap = $('#sitecap'), legend = $('#legend');
+  var CAP0 = sitecap.innerHTML;
+  function siteHL(t, id){
+    site.groups.forEach(function(o){ var on = t && o.h.t===t && (!id || o.h.id===id); o.poly.classList.toggle('on', !!on); o.poly.classList.toggle('dim', !!t && !on); });
+    site.gh.classList.toggle('on', t==='gh');
+    $$('li', legend).forEach(function(li){ li.classList.toggle('on', !!t && li.dataset.t===t && (!id || li.dataset.id===id || !li.dataset.id)); });
+    if(t){ var inf = INFO[t], mine = id==='SB2'; sitecap.innerHTML = '<b>'+(id ? id : (t==='gh' ? 'Gatehouse' : (t==='d1' ? 'V1–V4' : 'V5')))+'</b>'+(mine?'<i>Your block</i>':'')+'<br>'+inf.h+' · '+inf.t+' · '+inf.s; }
+    else { sitecap.innerHTML = CAP0; }
+  }
+  ['mouseover','focusin'].forEach(function(ev){ sitesvg.addEventListener(ev, function(e){ var g = e.target.closest('[data-t]'); if(g) siteHL(g.dataset.t, g.dataset.id); }); });
+  ['mouseout','focusout'].forEach(function(ev){ sitesvg.addEventListener(ev, function(e){ if(!e.relatedTarget || !e.relatedTarget.closest || !e.relatedTarget.closest('[data-t]')) siteHL(null); }); });
+  $$('li', legend).forEach(function(li){ li.addEventListener('mouseenter', function(){ siteHL(li.dataset.t, li.dataset.id); }); li.addEventListener('mouseleave', function(){ siteHL(null); }); li.addEventListener('click', function(){ siteHL(li.classList.contains('on') ? null : li.dataset.t, li.dataset.id); }); });
+  var spio = new IntersectionObserver(function(es){ if(es[0].isIntersecting){ $('#siteplan').classList.add('draw'); spio.disconnect(); } }, {threshold:.3}); spio.observe($('#siteplan'));
+
+  /* ——— floor plans: both homes, numbered from the room labels on the sheets ——— */
+  var ROOMS = {
+    ground:[{g:'Left-hand home',r:[['Living & dining',18.6,53.9],['Kitchen',35.7,23.9],['Store',13.1,16.7],['Visitors’ WC',45.1,83.5],['Stair hall',41.0,46.0]]},{g:'Right-hand home',r:[['Living & dining',80.8,53.9],['Kitchen',60.9,23.9],['Store',87.9,16.7],['Visitors’ WC',55.2,83.5],['Stair hall',58.7,47.0]]}],
+    first:[{g:'Left-hand home',r:[['Family living',20.0,48.3],['Bedroom 1',24.4,20.9],['Bath · bedroom 1',42.6,11.2],['Bedroom 2',19.9,72.8],['Closet · bedroom 2',42.3,78.1],['Bath · bedroom 2',42.6,87.0],['Stair hall',42.3,52.0],['Balcony',26.2,89.6]]},{g:'Right-hand home',r:[['Family living',81.0,48.3],['Bedroom 1',77.9,20.9],['Bath · bedroom 1',57.7,11.2],['Bedroom 2',81.0,72.8],['Closet · bedroom 2',58.6,78.1],['Bath · bedroom 2',57.0,87.0],['Stair hall',58.6,52.0],['Balcony',84.7,89.6]]}],
+    second:[{g:'Left-hand home',r:[['Master bedroom',21.8,20.8],['Walk-in closet',14.9,46.8],['Bath · master bedroom',42.9,10.8],['Bedroom 3',19.9,66.7],['Bath · bedroom 3',44.8,80.1],['Stair hall',42.6,52.5],['Balcony',23.4,86.3]]},{g:'Right-hand home',r:[['Master bedroom',78.0,20.8],['Walk-in closet',85.9,46.8],['Bath · master bedroom',57.6,10.8],['Bedroom 3',80.9,66.7],['Bath · bedroom 3',55.0,80.1],['Stair hall',58.3,52.5],['Balcony',76.8,86.3]]}]
+  };
+  var SIZES = {ground:[1905,1645], first:[2207,1796], second:[2207,1794]};
+  var FLOOR = {
+    ground:{h:'Ground floor', rt:'±0.00 · the living floor', sum:'The living and dining room opens to the terrace at the back; the kitchen and its store sit at the front beside the stair, with the visitors’ WC at the entrance. The front doors of the two homes stand either side of the central pier.', lab:'<b>Ground floor</b> · entrances at the foot of the plan · the terrace beyond the living room', alt:'Ground floor plan of the pair: two mirrored homes, each with living and dining room, kitchen, store, visitors’ WC and stair hall.'},
+    first:{h:'First floor', rt:'+4.05 · the family floor', sum:'The family living room sits at the heart of each home between two bedroom suites: bedroom 1 at the back and bedroom 2 at the front with its closet. The balcony behind the perforated screen opens off the front of the floor.', lab:'<b>First floor</b> · the balconies behind the screens at the foot of the plan', alt:'First floor plan of the pair: family living room, two en-suite bedrooms, stair hall and balcony in each home.'},
+    second:{h:'Second floor', rt:'+7.65 · the master floor', sum:'The master bedroom takes the back of the top floor, with its walk-in closet and bath; bedroom 3 and its bath take the front, opening to the balcony beneath the roof overhang.', lab:'<b>Second floor</b> · two bedroom suites per home beneath the roof overhang', alt:'Second floor plan of the pair: master bedroom with walk-in closet and bath, bedroom 3 en suite, stair hall and balcony in each home.'}
+  };
+  var planimg = $('#planimg'), labels = $('#labels'), planlab = $('#planlab'), pside = $('#pside'), curFloor = 'ground';
+  function hi(i, on){
+    $$('.mk', labels).forEach(function(m){ var me = m.dataset.i===String(i); m.classList.toggle('hi', on && me); m.classList.toggle('dim', on && !me); });
+    $$('.rl li', pside).forEach(function(li){ li.classList.toggle('hi', on && li.dataset.i===String(i)); });
+  }
+  function renderPlan(floor){
+    var F = FLOOR[floor], sz = SIZES[floor], n = 0, lh = '', side = '';
+    planimg.src = asset('assets/plan-s-'+floor+'.png'); planimg.width = sz[0]; planimg.height = sz[1]; planimg.alt = F.alt; planlab.innerHTML = F.lab;
+    ROOMS[floor].forEach(function(grp, gi){
+      var items = '';
+      grp.r.forEach(function(r){ n++; lh += '<span class="mk'+(gi?' r':'')+'" data-i="'+n+'" style="left:'+r[1]+'%;top:'+r[2]+'%" title="'+r[0]+'">'+n+'</span>'; items += '<li data-i="'+n+'"><i>'+String(n).padStart(2,'0')+'</i><span>'+r[0]+'</span></li>'; });
+      side += '<div><h4><span class="k'+(gi?' r':'')+'"></span>'+grp.g+'</h4><ul class="rl">'+items+'</ul></div>';
+    });
+    labels.innerHTML = lh;
+    pside.innerHTML = '<h3>'+F.h+'</h3><span class="rt">'+F.rt+'</span><p>'+F.sum+'</p><div class="homes">'+side+'</div>';
+    $$('.mk', labels).forEach(function(m){ m.addEventListener('mouseenter', function(){ hi(m.dataset.i, true); }); m.addEventListener('mouseleave', function(){ hi(null, false); }); });
+    $$('.rl li', pside).forEach(function(li){ li.addEventListener('mouseenter', function(){ hi(li.dataset.i, true); }); li.addEventListener('mouseleave', function(){ hi(null, false); }); });
+    $$('#levels > div').forEach(function(d){ d.classList.toggle('on', d.dataset.f===floor); });
+  }
+  renderPlan(curFloor);
+  if(window.__PRINT) window.__renderPlan = renderPlan;
+  $$('.tab[data-floor]').forEach(function(tab){ tab.addEventListener('click', function(){ if(tab.dataset.floor===curFloor) return; $$('.tab[data-floor]').forEach(function(t){ t.setAttribute('aria-selected', String(t===tab)); }); curFloor = tab.dataset.floor; renderPlan(curFloor); }); });
+
+  /* ——— lightbox: views and plans ——— */
+  var VIEWS = [
+    {src:'assets/front-day.jpg', cap:'SB2 by day · two screens, one pier'},
+    {src:'assets/hero-dusk.jpg', cap:'SB2 at dusk · light under every edge'},
+    {src:'assets/avenue-corner.jpg', cap:'From the avenue · towards the pair'},
+    {src:'assets/aerial.jpg', cap:'From above · the enclave'},
+    {src:'assets/hero-terrace.jpg', cap:'The row from the avenue · across from SB2'},
+    {src:'assets/row.jpg', cap:'The row · five detached duplexes'},
+    {src:'assets/corner.jpg', cap:'The corner · the cantilever'},
+    {src:'assets/avenue.jpg', cap:'The avenue · along the row'}
+  ];
+  var PLANS = ['ground','first','second'].map(function(f){ return {src:'assets/plan-s-'+f+'.png', cap:'Block SB2 · '+FLOOR[f].h+' · both homes', plan:true}; });
+  var lb = $('#lb'), lbs = $('#lbs'), lbimg = $('#lbimg'), lbcap = $('#lbcap'), lbcnt = $('#lbcnt'), zoom = $('#zoom'), set = VIEWS, cur = 0, lastFocus = null, scrollY0 = 0;
+  function show(i){
+    cur = (i + set.length) % set.length; var it = set[cur];
+    lbimg.src = asset(it.src); lbimg.alt = it.cap; lbcap.textContent = it.cap; lbcnt.textContent = String(cur+1).padStart(2,'0')+' / '+String(set.length).padStart(2,'0');
+    lbs.classList.toggle('plan', !!it.plan); lbs.classList.remove('zoom'); zoom.hidden = !it.plan; zoom.textContent = 'Zoom';
+  }
+  function openLB(items, i){ set = items; lastFocus = document.activeElement; scrollY0 = window.scrollY; show(i); lb.hidden = false; document.body.classList.add('locked'); $('#lbclose').focus(); }
+  function closeLB(){ lb.hidden = true; document.body.classList.remove('locked'); if(lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true}); }
+  $$('#gal figure').forEach(function(f){ f.addEventListener('click', function(){ openLB(VIEWS, +f.dataset.lb); }); f.setAttribute('tabindex','0'); f.setAttribute('role','button'); f.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openLB(VIEWS, +f.dataset.lb); } }); });
+  $('#enlarge').addEventListener('click', function(){ openLB(PLANS, ['ground','first','second'].indexOf(curFloor)); });
+  $('#lbclose').addEventListener('click', closeLB);
+  $('#lbprev').addEventListener('click', function(){ show(cur-1); });
+  $('#lbnext').addEventListener('click', function(){ show(cur+1); });
+  zoom.addEventListener('click', function(){ var z = lbs.classList.toggle('zoom'); zoom.textContent = z ? 'Fit' : 'Zoom'; if(z){ lbs.scrollLeft = (lbs.scrollWidth - lbs.clientWidth)/2; } });
+  lbs.addEventListener('click', function(e){ if(e.target === lbs) closeLB(); });
+  document.addEventListener('keydown', function(e){ if(lb.hidden) return; if(e.key==='Escape') closeLB(); else if(e.key==='ArrowLeft') show(cur-1); else if(e.key==='ArrowRight') show(cur+1); });
+  var tx0 = null; lbs.addEventListener('touchstart', function(e){ tx0 = e.touches[0].clientX; }, {passive:true}); lbs.addEventListener('touchend', function(e){ if(tx0===null || lbs.classList.contains('zoom')) return; var dx = e.changedTouches[0].clientX - tx0; if(Math.abs(dx) > 50) show(dx < 0 ? cur+1 : cur-1); tx0 = null; }, {passive:true});
+})();
+</script>
+</body>
+</html>

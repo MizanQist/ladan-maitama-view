@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print edition of the SB2 dossier: a full-bleed cover plus twelve A4-landscape pages from index.html.
+"""Print edition of the SB2 dossier: a full-bleed cover, twelve A4-landscape pages and a back cover from index.html.
 
 The live page is loaded in headless Chromium with window.__PRINT set, a print
 stylesheet is added, and the sheets are re-cut into fixed 297 x 210 mm pages
@@ -44,7 +44,15 @@ main{margin:0}
 .front .ftop,.front .fbot{font-size:7pt}
 .front .ftitle{font-size:96pt}
 .front .ftitle small{font-size:7.4pt;margin-bottom:6mm}
-.front .fby{font-size:12pt;margin-top:5mm}
+/* back cover: charcoal, built here (print only) */
+.pg.back{padding:0;background:var(--ink)}
+.backc{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:14mm 16mm;color:#f6f6f4;font:500 7pt/1.6 var(--fb);letter-spacing:.24em;text-transform:uppercase}
+.backc .bt{display:flex;justify-content:space-between}
+.backc .bm{text-align:center}
+.backc .bm b{display:block;font:200 30pt/1 var(--fd);letter-spacing:-.01em;text-transform:none;margin:0 0 6mm}
+.backc .bm i{display:block;width:14mm;height:.4mm;background:var(--acc2);margin:0 auto 6mm}
+.backc .bb{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:6mm;color:rgba(246,246,244,.72)}
+.backc .bb span b{display:block;color:#f6f6f4;font-weight:500;margin-bottom:1.5mm}
 .front .cue{display:none}
 /* welcome */
 .pg.cover .stamp{font-size:6.8pt;margin-bottom:12mm}
@@ -156,7 +164,12 @@ PRINT_JS = r"""
   page('band', [H('views'), take('#views .title'), take('#views .gal')]);
   page('', [H('desk'), take('#desk .desk'), take('#desk .disc')]);
   page('front', [take('#front')]); pages.unshift(pages.pop());
-  pages.slice(1).forEach((p, i, rest) => { const f = document.createElement('div'); f.className = 'pfoot'; f.innerHTML = '<span>' + FOOT + '</span><span>' + String(i + 1).padStart(2, '0') + ' / ' + String(rest.length).padStart(2, '0') + '</span>'; p.appendChild(f); });
+  const back = document.createElement('div'); back.className = 'backc';
+  back.innerHTML = '<div class="bt"><span>Mizan Qist Limited</span><span>Issue 01 · October 2026 · Private</span></div>'
+    + '<div class="bm"><b>47 Lake Chad</b><i></i><span>Block SB2 · Maitama View · Plot 758, CAD Zone A05 · Maitama, Abuja</span></div>'
+    + '<div class="bb"><span><b>WhatsApp</b>+44 7931 814601</span><span><b>Abuja</b>+234 808 6666 206</span><span><b>Email</b>mizanqistltd@gmail.com</span></div>';
+  page('back', [back]);
+  pages.slice(1, -1).forEach((p, i, rest) => { const f = document.createElement('div'); f.className = 'pfoot'; f.innerHTML = '<span>' + FOOT + '</span><span>' + String(i + 1).padStart(2, '0') + ' / ' + String(rest.length).padStart(2, '0') + '</span>'; p.appendChild(f); });
   main.innerHTML = ''; pages.forEach(p => main.appendChild(p));
   return pages.length;
 })()

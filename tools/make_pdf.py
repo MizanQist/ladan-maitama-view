@@ -51,7 +51,7 @@ main{margin:0}
 .backc .bm{text-align:center}
 .backc .bm b{display:block;font:200 30pt/1 var(--fd);letter-spacing:-.01em;text-transform:none;margin:0 0 6mm}
 .backc .bm i{display:block;width:14mm;height:.4mm;background:var(--acc2);margin:0 auto 6mm}
-.backc .bb{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:6mm;color:rgba(246,246,244,.72)}
+.backc .bb{display:grid;grid-template-columns:repeat(2,auto);justify-content:space-between;gap:6mm;color:rgba(246,246,244,.72)}
 .backc .bb span b{display:block;color:#f6f6f4;font-weight:500;margin-bottom:1.5mm}
 .front .cue{display:none}
 /* welcome */
@@ -136,7 +136,7 @@ main{margin:0}
 PRINT_JS = r"""
 (() => {
   const $ = (s, r) => (r || document).querySelector(s);
-  const MM = 96 / 25.4, FOOT = 'Block SB2 at Maitama View · Prepared for Mr Dikko Ladan by Mizan Qist Limited · Private';
+  const MM = 96 / 25.4, FOOT = 'Block SB2 at Maitama View · Prepared for Mr Dikko Ladan by Wrace International · Private';
   const main = $('main'), pages = [];
   const take = (s) => { const n = $(s); if (!n) throw new Error('missing ' + s); return n; };
   const head = {}; ['enclave', 'block', 'plans', 'materials', 'views', 'desk'].forEach(id => { head[id] = take('#' + id + ' .shead'); });
@@ -165,9 +165,9 @@ PRINT_JS = r"""
   page('', [H('desk'), take('#desk .desk'), take('#desk .disc')]);
   page('front', [take('#front')]); pages.unshift(pages.pop());
   const back = document.createElement('div'); back.className = 'backc';
-  back.innerHTML = '<div class="bt"><span>Mizan Qist Limited</span><span>Issue 01 · October 2026 · Private</span></div>'
+  back.innerHTML = '<div class="bt"><span>Wrace International</span><span>Issue 01 · October 2026 · Private</span></div>'
     + '<div class="bm"><b>47 Lake Chad</b><i></i><span>Block SB2 · Maitama View · Plot 758, CAD Zone A05 · Maitama, Abuja</span></div>'
-    + '<div class="bb"><span><b>WhatsApp</b>+44 7931 814601</span><span><b>Abuja</b>+234 808 6666 206</span><span><b>Email</b>mizanqistltd@gmail.com</span></div>';
+    + '<div class="bb"><span><b>Office</b>The District by Wrace, 83 Close Adetokunbo Ademola Cres, Abuja</span><span><b>Email</b>wraceinternational@gmail.com</span></div>';
   page('back', [back]);
   pages.slice(1, -1).forEach((p, i, rest) => { const f = document.createElement('div'); f.className = 'pfoot'; f.innerHTML = '<span>' + FOOT + '</span><span>' + String(i + 1).padStart(2, '0') + ' / ' + String(rest.length).padStart(2, '0') + '</span>'; p.appendChild(f); });
   main.innerHTML = ''; pages.forEach(p => main.appendChild(p));

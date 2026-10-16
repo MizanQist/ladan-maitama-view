@@ -38,7 +38,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .k{font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--acc)}
 
 /* ——— title-block rail ——— */
-.rail{position:fixed;top:0;left:0;bottom:0;width:var(--rail);border-right:1px solid var(--line);padding:30px 26px 26px;display:flex;flex-direction:column;gap:34px;background:var(--bg2);z-index:40}
+.rail{position:sticky;top:0;align-self:start;height:100vh;height:100svh;width:var(--rail);border-right:1px solid var(--line);padding:30px 26px 26px;display:flex;flex-direction:column;gap:34px;background:var(--bg2);z-index:40}
 .mark{display:flex;align-items:center;gap:12px;text-decoration:none}
 .mark .sb{display:inline-flex;align-items:center;height:26px;padding:0 10px;border:1px solid var(--acc2);border-radius:999px;font:500 .7rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
 .mark .t{font:300 .78rem/1 var(--fd);letter-spacing:.3em;text-transform:uppercase;white-space:nowrap}
@@ -59,7 +59,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .bar .idxbtn{height:40px;padding:0 18px;border:1px solid var(--line2);border-radius:999px;font:500 .72rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase}
 
 /* ——— sheets ——— */
-main{margin-left:var(--rail)}
+body{display:grid;grid-template-columns:var(--rail) minmax(0,1fr)}
+.front{grid-column:1/-1}
+main{min-width:0}
 .sheet{padding:clamp(60px,8vw,120px) var(--gut) clamp(68px,9vw,136px)}
 .sheet.band{background:var(--bg2)}
 .sheet > *{max-width:1360px}
@@ -89,6 +91,19 @@ main{margin-left:var(--rail)}
 .sched div{display:grid;grid-template-columns:minmax(120px,36%) 1fr;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);font-size:.92rem;line-height:1.5;color:var(--ink2)}
 .sched dt{font:500 .7rem/1.6 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);padding-top:3px}
 .sched dd{margin:0}
+
+/* ——— front cover ——— */
+.front{position:relative;height:100vh;height:100svh;min-height:540px;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,3.4vw,44px) var(--gut);color:#f6f6f4;background:var(--ink);overflow:hidden;isolation:isolate}
+.front > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2}
+.front::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,22,26,.42) 0%,rgba(20,22,26,0) 24%,rgba(20,22,26,0) 44%,rgba(20,22,26,.66) 100%)}
+.front .ftop,.front .fbot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase}
+.front .fbot{align-items:end}
+.front .ftitle{margin:0;font:200 clamp(3.4rem,10.5vw,10rem)/.95 var(--fd);letter-spacing:-.02em}
+.front .ftitle small{display:block;font:500 .72rem/1.5 var(--fb);letter-spacing:.24em;text-transform:uppercase;margin-bottom:clamp(14px,2vw,26px)}
+.front .fby{margin:clamp(16px,2vw,26px) 0 0;font:300 clamp(1rem,1.3vw,1.2rem)/1.5 var(--fb)}
+.front .cue{display:inline-flex;align-items:center;gap:12px;height:46px;padding:0 22px;border:1px solid rgba(246,246,244,.6);border-radius:999px;text-decoration:none;transition:background .3s}
+.front .cue:hover{background:rgba(246,246,244,.14)}
+.front .cue svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5}
 
 /* ——— 00 welcome ——— */
 .welcome{padding-top:clamp(40px,6vw,80px)}
@@ -278,6 +293,8 @@ body.locked{overflow:hidden}
 }
 @media (max-width:1000px){
   :root{--rail:0px}
+  body{display:block}
+  .rail{position:fixed;left:0;bottom:0;height:auto}
   .bar{display:flex}
   .rail{transform:translateX(-100%);transition:transform .5s var(--ease);width:min(330px,86vw);box-shadow:0 0 0 100vmax rgba(31,34,39,0)}
   .rail.open{transform:none;box-shadow:0 0 0 100vmax rgba(31,34,39,.4)}
@@ -313,6 +330,19 @@ body.locked{overflow:hidden}
 </style>
 </head>
 <body>
+<!-- ——— front cover ——— -->
+<section class="front" id="front" aria-labelledby="h-front">
+  <img src="assets/avenue-corner.jpg" alt="Maitama View from the avenue: the white three-storey homes with perforated bronze balcony screens and lit soffits under a blue sky" fetchpriority="high" width="1800" height="1012">
+  <div class="ftop"><span>Mizan Qist · Private dossier</span><span>Issue 01 · October 2026</span></div>
+  <div class="fbot">
+    <div>
+      <h1 class="ftitle" id="h-front"><small>Block SB2 · Maitama View · Abuja</small>47 Lake Chad</h1>
+      <p class="fby">Prepared for Mr Dikko Ladan</p>
+    </div>
+    <a class="cue" href="#welcome">Open the dossier <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  </div>
+</section>
+
 <header class="bar">
   <a class="mark" href="#welcome"><span class="sb">SB2</span><span class="t">Maitama View</span></a>
   <button class="idxbtn" id="idxbtn" aria-controls="rail" aria-expanded="false">Index</button>
@@ -347,7 +377,7 @@ body.locked{overflow:hidden}
   <div class="stamp"><span>Private dossier</span><span>Prepared for Mr Dikko Ladan</span><span>Issue 01 · October 2026</span></div>
   <div class="hero">
     <div>
-      <h1 class="h1" id="h-welcome"><small>Maitama View · Block SB2</small>Welcome, Mr Dikko Ladan.</h1>
+      <h2 class="h1" id="h-welcome"><small>Maitama View · Block SB2</small>Welcome, Mr Dikko Ladan.</h2>
       <p class="lede">Block SB2 at Maitama View is yours: both homes of the semi-detached pair, four bedrooms each, behind one gate on Plot 758 in the diplomatic quarter of Abuja. These sheets walk you round the enclave, your block, its floor plans and the materials it is built from.</p>
       <div class="btns">
         <a class="btn pri" href="#plans">Open the floor plans <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -361,7 +391,7 @@ body.locked{overflow:hidden}
     </div>
     <figure style="margin:0">
       <div class="frame hv">
-        <img src="assets/front-day.jpg" alt="Block SB2 from the avenue by day: two dark perforated screens across the first-floor balconies either side of a central white pier, oak front doors below" fetchpriority="high" width="1800" height="1013">
+        <img src="assets/front-day.jpg" alt="Block SB2 from the avenue by day: two dark perforated screens across the first-floor balconies either side of a central white pier, oak front doors below" width="1800" height="1013">
       </div>
       <figcaption class="cap"><b>Block SB2 from the avenue</b> · visualisation</figcaption>
     </figure>

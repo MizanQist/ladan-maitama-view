@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print edition of the SB2 dossier: twelve A4-landscape pages from index.html.
+"""Print edition of the SB2 dossier: a full-bleed cover plus twelve A4-landscape pages from index.html.
 
 The live page is loaded in headless Chromium with window.__PRINT set, a print
 stylesheet is added, and the sheets are re-cut into fixed 297 x 210 mm pages
@@ -19,6 +19,7 @@ MM = 96 / 25.4
 PRINT_CSS = r"""
 @page{size:297mm 210mm;margin:0}
 html,body{margin:0;padding:0;background:var(--bg)}
+body{display:block}
 html{scroll-behavior:auto}
 .rail,.bar,.lb,.btns,.tabs,.tbtn,.railclose,.docs li.self{display:none!important}
 main{margin:0}
@@ -37,7 +38,15 @@ main{margin:0}
 .sched div{font-size:8.2pt;line-height:1.4;padding:2mm 0;gap:4mm;grid-template-columns:30mm 1fr}
 .sched dt{font-size:6.2pt;padding-top:1mm}
 .two,.two.rev{grid-template-columns:1fr 1fr;gap:12mm}
-/* cover */
+/* front cover: full-bleed photograph, no running footer */
+.pg.front{padding:0}
+.pg.front .front{height:100%;min-height:0;padding:14mm 16mm}
+.front .ftop,.front .fbot{font-size:7pt}
+.front .ftitle{font-size:96pt}
+.front .ftitle small{font-size:7.4pt;margin-bottom:6mm}
+.front .fby{font-size:12pt;margin-top:5mm}
+.front .cue{display:none}
+/* welcome */
 .pg.cover .stamp{font-size:6.8pt;margin-bottom:12mm}
 .pg.cover .hero{grid-template-columns:1fr 1fr;gap:14mm;align-items:center}
 .pg.cover .h1{font-size:40pt;margin-bottom:6mm}
@@ -146,7 +155,8 @@ PRINT_JS = r"""
   page('band', [H('materials'), take('#materials .spec')]);
   page('band', [H('views'), take('#views .title'), take('#views .gal')]);
   page('', [H('desk'), take('#desk .desk'), take('#desk .disc')]);
-  pages.forEach((p, i) => { const f = document.createElement('div'); f.className = 'pfoot'; f.innerHTML = '<span>' + FOOT + '</span><span>' + String(i + 1).padStart(2, '0') + ' / ' + String(pages.length).padStart(2, '0') + '</span>'; p.appendChild(f); });
+  page('front', [take('#front')]); pages.unshift(pages.pop());
+  pages.slice(1).forEach((p, i, rest) => { const f = document.createElement('div'); f.className = 'pfoot'; f.innerHTML = '<span>' + FOOT + '</span><span>' + String(i + 1).padStart(2, '0') + ' / ' + String(rest.length).padStart(2, '0') + '</span>'; p.appendChild(f); });
   main.innerHTML = ''; pages.forEach(p => main.appendChild(p));
   return pages.length;
 })()
